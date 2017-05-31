@@ -1,0 +1,9 @@
+{# app/Resources/views/lucky/number.html.twig #}
+<h1>Your lucky number is {{ number }}</h1>
+<h2>your name is {{ test.prenom ~' '~ test.nom }}</h2>
+<h3>and your friends are
+    {% for friend in test.amis %}
+        {{ friend ~', '}}
+    {% endfor %}
+</h3>
+
