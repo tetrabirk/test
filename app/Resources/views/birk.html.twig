@@ -1,0 +1,13 @@
+<div>
+    <h2>{{ data.prenom|capitalize }}~' '~{{ data.nom|upper }}</h2>
+    <h3>{{ data.dtn }}</h3>
+    <ul>
+        {% for cours in data.formation %}
+            <li>
+                {% for element in cours %}
+                    {{ element }}~' '
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+</div>
